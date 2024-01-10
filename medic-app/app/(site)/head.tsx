@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title> V-Medic</title>
+      <title>V-Medic</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Built with Next.js and TypeScript" />
       <link rel="icon" href="/images/favicon.ico" />

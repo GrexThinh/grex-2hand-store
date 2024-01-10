@@ -13,19 +13,12 @@ const features = () => {
     <ScrollAnimationWrapper className="">
         <motion.h3
           variants={scrollAnimation}
-          className="text-black-600 sm: mx-auto w-9/12 text-2xl font-medium leading-normal sm:text-3xl lg:w-4/12 lg:text-4xl"
+          className="text-black-600 text-3xl font-medium leading-normal flex justify-center"
         >
-          Trusted by Thousands of Happy Customer{" "}
+          Trusted by Thousands of Happy
         </motion.h3>
-        <motion.p
-          variants={scrollAnimation}
-          className="mx-auto mb-2 mt-4 w-10/12 leading-normal sm:w-7/12 lg:w-6/12"
-        >
-          These are the stories of our customers who have joined us with great
-          pleasure when using this crazy feature.
-        </motion.p>
       </ScrollAnimationWrapper>
-      <ScrollAnimationWrapper className="flex w-full flex-col py-12">
+      <ScrollAnimationWrapper className="flex w-full flex-col">
         <motion.div variants={scrollAnimation}>
           <Testimoni />
         </motion.div>
