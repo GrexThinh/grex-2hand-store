@@ -10,26 +10,42 @@ function Banner() {
       {/* Carousel wrapper */}
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {/* Item 1 */}
-        <div className=" duration-700 ease-in-out" data-carousel-item>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="https://doggystickers.vercel.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-6aeffeca.jpg%3Fv%3D1617396810&w=1920&q=75"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+            src="https://www.nbn.org.il/wp-content/uploads/2021/07/healthcare_glossary_1098-1-1.jpg"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
             alt="..."
           />
         </div>
         {/* Item 2 */}
-        <div className=" duration-700 ease-in-out" data-carousel-item>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="https://th.bing.com/th/id/OIP.WeR4ObjuqcovoeBrV9F7wQHaCs?rs=1&pid=ImgDetMain"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+            src="https://incucre.com/wp-content/uploads/2017/03/thiet-ke-banner-2-1-1024x351.jpg"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
             alt="..."
           />
         </div>
         {/* Item 3 */}
-        <div className=" duration-700 ease-in-out" data-carousel-item>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="https://i.pinimg.com/originals/76/a8/ea/76a8ea33d8fbc7ed64732b66528b027b.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+            src="https://www.uplevo.com/img/designbox/thiet-ke-banner.png"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+            alt="..."
+          />
+        </div>
+        {/* Item 4 */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX26402160.jpg"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+            alt="..."
+          />
+        </div>
+        {/* Item 5 */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://thumbs.dreamstime.com/b/medicine-banner-word-line-icon-vector-background-medicine-banner-word-line-icon-115516744.jpg"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
             alt="..."
           />
         </div>
@@ -38,7 +54,7 @@ function Banner() {
       <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse">
         <button
           type="button"
-          className="h-3 w-3 rounded-full"
+          className="h-3 w-3 rounded-full red"
           aria-current="true"
           aria-label="Slide 1"
           data-carousel-slide-to="0"
@@ -57,6 +73,21 @@ function Banner() {
           aria-label="Slide 3"
           data-carousel-slide-to="2"
         ></button>
+        <button
+          type="button"
+          className="h-3 w-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 4"
+          data-carousel-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          className="h-3 w-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 5"
+          data-carousel-slide-to="4"
+        ></button>
+
       </div>
       {/* Slider controls */}
       <button
@@ -74,9 +105,9 @@ function Banner() {
           >
             <path
               stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
               d="M5 1 1 5l4 4"
             />
           </svg>
@@ -98,9 +129,9 @@ function Banner() {
           >
             <path
               stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
               d="m1 9 4-4-4-4"
             />
           </svg>
