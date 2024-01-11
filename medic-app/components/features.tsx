@@ -15,7 +15,7 @@ const features = () => {
           variants={scrollAnimation}
           className="text-black-600 text-3xl font-medium leading-normal flex justify-center"
         >
-          Trusted by Thousands of Happy
+          Best Seller Products
         </motion.h3>
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper className="flex w-full flex-col">

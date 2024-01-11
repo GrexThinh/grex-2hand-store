@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost", 'vercel-commerce-demo.umbraco.com', 'admin.vercel-commerce-demo.umbraco.com', 'i.pinimg.com'],
+    domains: ["localhost", 'vercel-commerce-demo.umbraco.com', 'admin.vercel-commerce-demo.umbraco.com', 'i.pinimg.com', 'www.netmeds.com'],
     remotePatterns: [
       {
         protocol: "https",

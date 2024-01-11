@@ -70,7 +70,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -78,7 +78,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -86,7 +86,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -94,7 +94,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -102,7 +102,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -110,7 +110,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -118,7 +118,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -126,7 +126,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
   {
     id: 1,
@@ -134,7 +134,7 @@ const BlogData: Blog[] = [
     title: "The Unicorn",
     description: "You know he's got his own personal stylist.",
     price: 9.99,
-    imageNode: "/images/blog/dog0.webp",
+    imageNode: "/images/blog/med1.webp",
   },
 ];
 

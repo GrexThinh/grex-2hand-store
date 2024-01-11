@@ -1,78 +1,49 @@
 "use client";
 import React from "react";
-import { styled, alpha } from "@mui/material/styles";
 import {
   FormControl,
-  InputBase,
   InputLabel,
   MenuItem,
   Select,
 } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import BlogData from "../Blog/blogData";
 import ProductCard from "../ProductCard";
-
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
-    width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "full",
-    },
-  },
-}));
 
 const Products = () => {
   return (
     <div className="flex flex-col gap-5 ">
       <div className="flex items-center justify-between">
-        <div className="w-1/2">
-          <Search className="border-2">
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              className="w-full"
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
+        <div className="w-full">
+          <div className="relative w-3/4">
+            <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
+              <svg
+                className="h-4 w-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="search"
+              id="default-search"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              placeholder="Search"
+              required
             />
-          </Search>
+          </div>
         </div>
 
         <FormControl sx={{ m: 1, minWidth: 300 }} size="small" className="pr-3">
-          <InputLabel className="text-zinc-500">
-            Sort
-          </InputLabel>
+          <InputLabel className="text-zinc-500">Sort</InputLabel>
           <Select
             className="w-full text-zinc-500"
             value={10}
