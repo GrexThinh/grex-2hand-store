@@ -68,7 +68,7 @@ const Testimoni = ({}) => {
         </a>
       );
     },
-    dotsClass: "slick-dots w-max absolute mt-20  ",
+    dotsClass: "slick-dots w-full absolute mt-20  ",
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -150,18 +150,21 @@ const Testimoni = ({}) => {
           <Link href={`/blog/blog-details`} passHref>
             <div className="flex px-3" key={index}>
               <div className="flex flex-col rounded-lg border-2 border-gray-500 p-8 transition-all hover:border-orange-500">
-                <div className="flex space-x-5">
-                  <Image
-                    src={listTestimonis.image}
-                    height="300"
-                    width="200"
-                    alt="Icon People"
-                  />
+                <div className="flex flex-col space-y-5 sm:flex-row sm:space-x-5 md:flex-row md:space-x-5 xl:flex-row xl:space-x-5">
+                  <div className="flex justify-center">
+                    <img
+                      src={listTestimonis.image}
+                      alt="testimoni"
+                      className="h-40 w-36 sm:w-48 md:w-60 xl:w-60"
+                    />
+                  </div>
                   <div className="flex flex-col place-content-evenly space-y-5">
-                    <p>{listTestimonis.name}</p>
-                    <p className="">{listTestimonis.testimoni}</p>
-                    <div className="flex space-x-3 items-center">
-                      <p className="xl:text-xl md:text-xl sm:text-sm">More details</p>
+                    <p className="flex justify-center text-xl font-semibold">{listTestimonis.name}</p>
+                    <p className="flex justify-center">{listTestimonis.testimoni}</p>
+                    <div className="flex items-center space-x-3 justify-end">
+                      <p className="sm:text-sm md:text-xl xl:text-xl">
+                        More details
+                      </p>
                       <svg
                         className="h-6 w-6 text-gray-800 dark:text-white"
                         aria-hidden="true"

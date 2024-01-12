@@ -20,20 +20,20 @@ const ProductCard = ({ product }) => {
           />
         </div>
         <div className="relative h-48">
-          <div className="font-primary text-palette-primary px-4 pt-4 font-semibold xl:text-2xl">
+          <div className="font-primary text-palette-primary px-4 pt-4 font-semibold xl:text-xl text-sm md:text-xl sm:text-xl lg:text-xl">
             {title}
           </div>
-          <div className="font-primary p-4 text-gray-600 xl:text-lg sm:text-xs">
+          <div className="font-primary p-4 text-gray-600 text-xs xl:text-lg sm:text-sm md:text-lg lg:text-xl">
             {description}
           </div>
           <div
             className="text-palette-dark bg-palette-lighter absolute bottom-0 right-0 mb-2 rounded-tl-sm pb-1 pr-4 pt-2 
             xl:text-base xl:font-medium"
           >
-            <div className="flex space-x-3 items-center">
-              <p className="text-sm md:text-xl xl:text-xl">More details</p>
+            <div className="flex space-x-2 items-center">
+              <p className="text-xs xl:text-lg sm:text-sm md:text-lg lg:text-xl">More details</p>
               <svg
-                className="h-6 w-6 text-gray-800 dark:text-white"
+                className="h-6 w-6 text-gray-800 dark:text-white text-xs"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
