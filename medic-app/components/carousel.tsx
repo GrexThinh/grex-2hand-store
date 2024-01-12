@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { GridTileImage } from "./tile";
-import { Product, Image, ProductVariant } from "@/types/product";
+import { Product } from "@/types/product";
 
 const mockdata: Product[] = [
   {
@@ -204,12 +204,10 @@ const mockdata: Product[] = [
 ];
 
 export async function Carousel() {
-  // Collections that start with `hidden-*` are hidden from the search page.
   const products = mockdata;
 
   if (!products?.length) return null;
 
-  // Purposefully duplicating products to make the carousel loop and not run out of products on wide screens.
   const carouselProducts = [...products, ...products, ...products];
 
   return (
@@ -218,7 +216,7 @@ export async function Carousel() {
         {carouselProducts.map((product, i) => (
           <li
             key={`${product.handle}${i}`}
-            className="relative aspect-square h-[30vh] max-h-[275px] w-2/3 max-w-[475px] flex-none md:w-1/3"
+            className="relative aspect-square h-80 sm:h-96 w-full flex-none md:w-1/3"
           >
             <Link
               href={`/product/${product.handle}`}
