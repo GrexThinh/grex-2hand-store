@@ -5,13 +5,12 @@ const ProductCard = ({ product }) => {
   const handle = product.handle;
   const title = product.title;
   const description = product.description;
-  const price = product.price;
   const imageNode = product.imageNode;
 
   return (
     <Link href={`/blog/${handle}`} passHref>
-      <div className="md:h-120 xl:h-120 border-palette-lighter mx-auto rounded border shadow-lg md:w-80 xl:w-80">
-        <div className="border-palette-lighter relative h-44 border-b-2 md:h-72 xl:h-80">
+      <div className="md:h-120 xl:h-120 border-palette-lighter mx-auto rounded border shadow-lg ">
+        <div className="border-palette-lighter relative h-44 border-b-2 md:h-96 xl:h-96">
           <Image
             src={imageNode}
             alt={imageNode}
@@ -19,7 +18,7 @@ const ProductCard = ({ product }) => {
             className="transform duration-500 ease-in-out hover:scale-110"
           />
         </div>
-        <div className="relative h-48">
+        <div className="relative h-44">
           <div className="font-primary text-palette-primary px-4 pt-4 font-semibold xl:text-xl text-sm md:text-xl sm:text-xl lg:text-xl">
             {title}
           </div>

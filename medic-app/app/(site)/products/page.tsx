@@ -9,55 +9,54 @@ export const metadata: Metadata = {
 
 const ProductsPage = () => {
   return (
-    <div className="pb-20 pt-40">
-      <div className="grid grid-cols-4 gap-4 px-20">
-        <div className="">
-          <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
-            <div className="flex flex-col gap-10">
-              <div>
-                <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
-                  Categories
-                </h4>
-                <ul>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Blog</a>
-                  </li>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Events</a>
-                  </li>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Grids</a>
-                  </li>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">News</a>
-                  </li>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Rounded</a>
-                  </li>
-                </ul>
-              </div>
-              <Divider />
-              <div>
-                <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
-                  Others
-                </h4>
-                <ul>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">New</a>
-                  </li>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Sale</a>
-                  </li>
-                  <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Coming soon</a>
-                  </li>
-                </ul>
-              </div>
+    <div className="pb-20 pt-40 px-5">
+      <div className="grid sm:grid-cols-6 gap-4">
+
+        <div className="col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1 animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
+          <div className="flex flex-col gap-10">
+            <div>
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
+                Categories
+              </h4>
+              <ul>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">Blog</a>
+                </li>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">Events</a>
+                </li>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">Grids</a>
+                </li>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">News</a>
+                </li>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">Rounded</a>
+                </li>
+              </ul>
+            </div>
+            <Divider />
+            <div>
+              <h4 className="mb-3 text-2xl font-semibold text-black dark:text-white">
+                Others
+              </h4>
+              <ul>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">New</a>
+                </li>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">Sale</a>
+                </li>
+                <li className="mb-2 transition-all duration-300 last:mb-0 hover:text-primary">
+                  <a href="#">Coming soon</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div className="col-span-3">
+        <div className="md:col-span-4 sm:col-span-4 lg:col-span-5 xl:col-span-5">
           <Products />
         </div>
       </div>
