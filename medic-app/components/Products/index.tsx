@@ -6,9 +6,9 @@ import ProductCard from "../ProductCard";
 
 const Products = () => {
   return (
-    <div className="flex flex-col gap-5 ">
-      <div className="grid grid-cols-4 gap-x-5">
-        <div className="relative xl:w-3/4 lg:w-1/2 md:w-5/6 sm:w-5/6 w-5/6 col-span-2">
+    <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-x-5 gap-y-5 sm:grid sm:grid-cols-4">
+        <div className="relative col-span-2 sm:w-3/4">
           <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
             <svg
               className="h-4 w-4 text-gray-500 dark:text-gray-400"
@@ -35,10 +35,10 @@ const Products = () => {
           />
         </div>
 
-        <FormControl sx={{ m: 1, minWidth: 300 }} size="small" className="col-span-1">
+        <FormControl className="">
           <InputLabel className="text-zinc-500">Sort</InputLabel>
           <Select
-            className="text-zinc-500 xl:w-4/5 2xl:w-full lg:w-3/5 md:w-2/5 w-4/12"
+            className="w-full text-zinc-500"
             value={10}
             label="Age"
             onChange={() => {}}
@@ -55,10 +55,10 @@ const Products = () => {
           </Select>
         </FormControl>
 
-        <FormControl sx={{ m: 1, minWidth: 300 }} size="small" className="col-span-1">
-          <InputLabel className="text-zinc-500">Size</InputLabel>
+        <FormControl className="">
+          <InputLabel className="text-zinc-500">Sort</InputLabel>
           <Select
-            className="text-zinc-500 xl:w-4/5 2xl:w-full lg:w-3/5 md:w-2/5 w-4/12"
+            className="w-full text-zinc-500"
             value={10}
             label="Age"
             onChange={() => {}}
@@ -76,7 +76,7 @@ const Products = () => {
         </FormControl>
       </div>
 
-      <div className="grid grid-cols-2 gap-x-5 gap-y-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="gap-x-5 gap-y-5 sm:grid sm:grid-cols-2 lg:grid-cols-3 flex flex-col">
         {BlogData.map((blog, key) => (
           <ProductCard product={blog} key={key} />
         ))}
