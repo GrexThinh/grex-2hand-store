@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   return (
     <Link href={`/blog/${handle}`} passHref>
       <div className="md:h-120 xl:h-120 border-palette-lighter mx-auto rounded border shadow-lg ">
-        <div className="border-palette-lighter relative h-80 border-b-2 md:h-96">
+        <div className="border-palette-lighter relative h-48 border-b-2 md:h-96">
           <Image
             src={imageNode}
             alt={imageNode}
@@ -19,10 +19,10 @@ const ProductCard = ({ product }) => {
           />
         </div>
         <div className="relative h-44">
-          <div className="font-primary text-palette-primary px-4 pt-4 font-semibold xl:text-xl text-base sm:text-lg md:text-xl">
+          <div className="font-primary text-palette-primary px-4 pt-4 font-semibold xl:text-xl text-xs sm:text-lg md:text-xl">
             {title}
           </div>
-          <div className="font-primary p-4 text-gray-600 text-base sm:text-lg md:text-xl">
+          <div className="font-primary p-4 text-gray-600 text-xs sm:text-lg md:text-xl">
             {description}
           </div>
           <div
@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
             xl:text-base xl:font-medium"
           >
             <div className="flex space-x-2 items-center">
-              <p className="text-base sm:text-lg md:text-xl">More details</p>
+              <p className="text-xs sm:text-lg md:text-xl">More details</p>
               <svg
                 className="h-6 w-6 text-gray-800 dark:text-white text-xs"
                 aria-hidden="true"

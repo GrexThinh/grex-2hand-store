@@ -76,7 +76,7 @@ const Products = () => {
         </FormControl>
       </div>
 
-      <div className="gap-x-5 gap-y-5 sm:grid sm:grid-cols-2 lg:grid-cols-3 flex flex-col">
+      <div className="gap-x-5 gap-y-5 grid grid-cols-2 lg:grid-cols-3">
         {BlogData.map((blog, key) => (
           <ProductCard product={blog} key={key} />
         ))}
