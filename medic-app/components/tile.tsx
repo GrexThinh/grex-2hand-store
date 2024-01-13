@@ -29,19 +29,21 @@ export function GridTileImage({
       )}
     >
       {props.src ? (
-        <div className="flex">
+        <div className="flex h-full flex-col">
           <img
-            className="relative h-1/3 w-2/3 object-contain transition duration-300 ease-in-out group-hover:scale-105"
+            className="h-2/3 w-full object-contain transition duration-300 ease-in-out group-hover:scale-105"
             src={props.src.toString()}
           />
-          <div className="relative w-full">jkdfkdmfkmdf</div>
+          <div className="flex flex-col items-center justify-center gap-y-5 lg:h-full">
+            <div className="text-xs sm:text-xs md:text-xl">Lorem Ipsum</div>
+            <div className="text-xs sm:text-sm px-3">
+              It is a long established fact that a reader distracted by
+              the readable content of a page when looking at its layout.{" "}
+            </div>
+          </div>
         </div>
       ) : null}
-      {label ? (
-        <Label
-          title={label.title}
-        />
-      ) : null}
+      {label ? <Label title={label.title} /> : null}
     </div>
   );
 }

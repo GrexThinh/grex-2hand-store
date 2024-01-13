@@ -2,17 +2,19 @@
 
 import ProductImage from "@/components/ProductImage";
 import ProductDetails from "@/components/ProductDetails";
+import ProductDesc from "./ProductDesc";
 
 function ProductSection({ productData }) {
   return (
-    <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
-      <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
-        <div className="flex items-center gap-8 lg:gap-32.5">
-          <ProductImage images={productData.images} />
-          <ProductDetails productData={productData} />
-        </div>
+    <div className="flex flex-col space-y-10">
+      <div className="flex grid-cols-2 flex-col space-y-5 sm:grid lg:px-10">
+        <ProductImage images={productData.images} />
+        <ProductDetails productData={productData} />
       </div>
-    </section>
+      <div className="sm:px-10">
+        <ProductDesc />
+      </div>
+    </div>
   );
 }
 

@@ -1,9 +1,7 @@
 "use client";
 
-import { useState, useRef, RefObject } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function ProductImage({ images }) {
   const [mainImg, setMainImg] = useState(images[0].node);
@@ -14,23 +12,35 @@ function ProductImage({ images }) {
   }
 
   return (
-    <div className="border-palette-lighter w-full max-w-md rounded border bg-white shadow-lg md:w-1/2">
-      <div className="relative h-96">
-        <Image
+    <div className="border-palette-lighter rounded border bg-white shadow-lg sm:w-3/4">
+      <div className="image-detail relative">
+        <img
           src={mainImg}
           alt={mainImg}
-          layout="fill"
           className="transform duration-500 ease-in-out hover:scale-105"
         />
       </div>
       <div className="border-palette-lighter relative flex border-t">
-        <button
-          aria-label="left-scroll"
-          className="bg-palette-lighter hover:bg-palette-light absolute  left-0 z-10 h-32 opacity-75"
+        <div
+          className="flex cursor-pointer items-center hover:bg-green-300"
           onClick={() => scroll(-300)}
         >
-          <div className="text-palette-primary mx-1 w-3" />
-        </button>
+          <svg
+            className="h-6 w-6 text-green-800"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 8 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
+            />
+          </svg>
+        </div>
         <div
           style={{ scrollBehavior: "smooth" }}
           className="border-palette-lighter flex w-full space-x-1 overflow-auto border-t"
@@ -51,13 +61,27 @@ function ProductImage({ images }) {
             </button>
           ))}
         </div>
-        <button
-          aria-label="right-scroll"
-          className="bg-palette-lighter hover:bg-palette-light absolute  right-0 z-10 h-32 opacity-75"
+
+        <div
+          className="flex cursor-pointer items-center hover:bg-green-300"
           onClick={() => scroll(300)}
         >
-          <div className="text-palette-primary mx-1 w-3" />
-        </button>
+          <svg
+            className="h-6 w-6 text-green-800"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 8 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   );
