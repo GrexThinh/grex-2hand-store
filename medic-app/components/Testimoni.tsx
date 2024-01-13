@@ -143,11 +143,11 @@ const Testimoni = ({}) => {
           <Link href={`/blog/blog-details`} passHref>
             <div className="flex px-3" key={index}>
               <div className="flex flex-col rounded-lg border-2 border-gray-500 p-3 transition-all hover:border-orange-500 sm:p-8">
-                <div className="sm:grid sm:grid-cols-2 sm:space-x-5 space-y-5 flex flex-col">
+                <div className="flex flex-col space-y-5 sm:grid sm:grid-cols-2 sm:space-x-5">
                   <img
                     src={listTestimonis.image}
                     alt="testimoni"
-                    className="sm:h-60 h-40 w-72 sm:w-72 md:w-96"
+                    className="h-40 w-72 sm:h-60 sm:w-72 md:w-96"
                   />
 
                   <div className="flex flex-col place-content-evenly space-y-5">
@@ -157,26 +157,12 @@ const Testimoni = ({}) => {
                     <p className="flex justify-center text-xs md:text-base">
                       {listTestimonis.testimoni}
                     </p>
-                    <div className="flex items-center justify-end space-x-3">
-                      <p className="sm:text-sm md:text-xl xl:text-xl">
-                        More details
-                      </p>
-                      <svg
-                        className="h-6 w-6 text-gray-800 dark:text-white"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 18 15"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="0.9"
-                          d="M1 7.5h11m0 0L8 3.786M12 7.5l-4 3.714M12 1h3c.53 0 1.04.196 1.414.544.375.348.586.82.586 1.313v9.286c0 .492-.21.965-.586 1.313A2.081 2.081 0 0 1 15 14h-3"
-                        />
-                      </svg>
-                    </div>
+                    <button
+                      type="button"
+                      className="animate-bounce rounded-lg bg-gradient-to-r from-green-500 to-yellow-200 px-3 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700"
+                    >
+                      Bấm xem chi tiết
+                    </button>
                   </div>
                 </div>
               </div>

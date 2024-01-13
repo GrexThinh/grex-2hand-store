@@ -43,7 +43,7 @@ export function GridTileImage({
           </div>
         </div>
       ) : null}
-      {label ? <Label title={label.title} /> : null}
+      {label ? <Label title={"New"} /> : null}
     </div>
   );
 }

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <div className="pb-20">
+    <div className="pb-20 pt-40">
       <FunFact />
     </div>
   );

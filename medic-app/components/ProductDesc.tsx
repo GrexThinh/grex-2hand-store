@@ -92,6 +92,12 @@ function ProductDesc() {
                   </td>
                   <td className="px-6 py-3">Úc</td>
                 </tr>
+                <tr className="border-b">
+                  <td className="px-6 py-3 text-gray-900 dark:text-white">
+                    Trọng lượng
+                  </td>
+                  <td className="px-6 py-3">500g</td>
+                </tr>
               </tbody>
             </table>
           </div>

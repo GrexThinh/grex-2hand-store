@@ -30,53 +30,53 @@ const Products = () => {
             type="search"
             id="default-search"
             className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-            placeholder="Tìm kiếm"
+            placeholder="Tìm kiếm sản phẩm"
             required
           />
         </div>
 
         <FormControl className="">
-          <InputLabel className="text-zinc-500">Sort</InputLabel>
+          <InputLabel className="text-zinc-500">Sắp xếp theo</InputLabel>
           <Select
             className="w-full text-zinc-500"
             value={10}
-            label="Age"
+            label="Sắp xếp theo"
             onChange={() => {}}
           >
             <MenuItem value={10} className="text-zinc-500">
-              Ten
+              Tên
             </MenuItem>
             <MenuItem value={20} className="text-zinc-500">
-              Twenty
-            </MenuItem>
-            <MenuItem value={30} className="text-zinc-500">
-              Thirty
+              Mới nhất
             </MenuItem>
           </Select>
         </FormControl>
 
         <FormControl className="">
-          <InputLabel className="text-zinc-500">Sort</InputLabel>
+          <InputLabel className="text-zinc-500">Hiển số lượng</InputLabel>
           <Select
             className="w-full text-zinc-500"
             value={10}
-            label="Age"
+            label="Hiển số lượng"
             onChange={() => {}}
           >
+            <MenuItem value={30} className="text-zinc-500">
+              Tất cả
+            </MenuItem>
             <MenuItem value={10} className="text-zinc-500">
-              Ten
+              10
             </MenuItem>
             <MenuItem value={20} className="text-zinc-500">
-              Twenty
+              20
             </MenuItem>
             <MenuItem value={30} className="text-zinc-500">
-              Thirty
+              30
             </MenuItem>
           </Select>
         </FormControl>
       </div>
 
-      <div className="gap-x-5 gap-y-5 grid grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-x-5 gap-y-5 lg:grid-cols-3">
         {BlogData.map((blog, key) => (
           <ProductCard product={blog} key={key} />
         ))}

@@ -22,7 +22,7 @@ const mockdata: Product[] = [
       },
     },
     featuredImage: {
-      url: "https://vercel-commerce-demo.umbraco.com/_next/image?url=https%3A%2F%2Fadmin.vercel-commerce-demo.umbraco.com%2Fmedia%2Fujdb1oe0%2Ft-shirt-spiral-1.png&w=1920&q=75",
+      url: "https://intriphat.com/wp-content/uploads/2023/02/in-hop-thuoc-5.jpg",
       width: 100,
       height: 200,
       altText: "",
@@ -55,7 +55,7 @@ const mockdata: Product[] = [
       },
     },
     featuredImage: {
-      url: "https://vercel-commerce-demo.umbraco.com/_next/image?url=https%3A%2F%2Fadmin.vercel-commerce-demo.umbraco.com%2Fmedia%2Fujdb1oe0%2Ft-shirt-spiral-1.png&w=1920&q=75",
+      url: "https://intriphat.com/wp-content/uploads/2023/02/in-hop-thuoc-5.jpg",
       width: 100,
       height: 200,
       altText: "",
@@ -88,7 +88,7 @@ const mockdata: Product[] = [
       },
     },
     featuredImage: {
-      url: "https://vercel-commerce-demo.umbraco.com/_next/image?url=https%3A%2F%2Fadmin.vercel-commerce-demo.umbraco.com%2Fmedia%2Fujdb1oe0%2Ft-shirt-spiral-1.png&w=1920&q=75",
+      url: "https://intriphat.com/wp-content/uploads/2023/02/in-hop-thuoc-5.jpg",
       width: 100,
       height: 200,
       altText: "",
