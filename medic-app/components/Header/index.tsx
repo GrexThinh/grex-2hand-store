@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -16,7 +15,7 @@ const Header = () => {
 
   // Sticky menu
   const handleStickyMenu = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY > 0) {
       setStickyMenu(true);
     } else {
       setStickyMenu(false);
@@ -27,6 +26,23 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyMenu);
   });
 
+  const handleClickOutside = (event) => {
+    const navigationMenu = document.getElementById("navigation");
+    if (navigationMenu && !navigationMenu.contains(event.target)) {
+      setNavigationOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleStickyMenu);
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("scroll", handleStickyMenu);
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
@@ -36,14 +52,9 @@ const Header = () => {
       }`}
     >
       <div className="relative mx-auto items-center justify-between px-4 md:px-8 xl:grid xl:grid-cols-5">
-        <div className="flex items-center justify-between gap-5 xl:w-1/4 col-span-2">
-          <a href="/">
-            <Image
-              src="/images/logo/vmedic.svg"
-              alt="logo"
-              width={120}
-              height={30}
-            />
+        <div className="col-span-2 flex items-center justify-between gap-5 xl:w-1/4">
+          <a href="/" className="w-1/4 xl:w-4/5 inline-block" role="button">
+            <img src="/images/logo/vmedic.svg" alt="logo" />
           </a>
 
           <div className="relative w-1/2 xl:hidden 2xl:hidden">
@@ -67,13 +78,14 @@ const Header = () => {
             <input
               type="search"
               id="default-search"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-              placeholder="Search"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-green-500 focus:ring-green-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-green-500 dark:focus:ring-green-500"
+              placeholder="Tìm kiếm"
               required
             />
           </div>
 
           <button
+            id="navigation"
             aria-label="hamburger Toggler"
             className="block xl:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
@@ -112,7 +124,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="hidden xl:block 2xl:block w-full">
+        <div className="hidden w-full xl:block 2xl:block">
           <div className="relative">
             <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
               <svg
@@ -134,17 +146,17 @@ const Header = () => {
             <input
               type="search"
               id="default-search"
-              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-              placeholder="Search"
+              className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-green-500 focus:ring-green-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-green-500 dark:focus:ring-green-500"
+              placeholder="Tìm kiếm"
               required
             />
           </div>
         </div>
-
         <div
-          className={`invisible col-span-2 h-0 items-center justify-end gap-10 xl:visible xl:flex xl:h-auto xl:w-full ${
+          id="navigation"
+          className={`invisible absolute right-0 col-span-2 h-0 items-center justify-end gap-10 xl:visible xl:flex xl:h-auto pr-5 ${
             navigationOpen &&
-            "navbar !visible h-auto max-h-[400px] rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
+            "navbar !visible h-auto rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
           }`}
         >
           <nav className="flex justify-end">

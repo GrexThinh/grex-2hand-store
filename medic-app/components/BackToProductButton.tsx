@@ -9,7 +9,7 @@ function BackToProductButton() {
       justify-center items-center focus:ring-1 focus:ring-palette-light focus:outline-none hover:bg-palette-lighter rounded-sm"
       >
         <div className="sm:text-lg text-xs" />
-        Back To All Products
+        Quay lại tất cả sản phẩm
       </div>
     </Link>
   )

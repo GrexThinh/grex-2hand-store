@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div
       id="default-carousel"
-      className="relative w-full py-30"
+      className="relative w-full pt-30"
       data-carousel="slide"
     >
       {/* Carousel wrapper */}
@@ -12,7 +12,7 @@ function Banner() {
         {/* Item 1 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="https://www.nbn.org.il/wp-content/uploads/2021/07/healthcare_glossary_1098-1-1.jpg"
+            src="https://incucre.com/wp-content/uploads/2017/03/thiet-ke-banner-2-1-1024x351.jpg"
             className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
             alt="..."
           />
@@ -21,7 +21,7 @@ function Banner() {
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="https://incucre.com/wp-content/uploads/2017/03/thiet-ke-banner-2-1-1024x351.jpg"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
             alt="..."
           />
         </div>
@@ -29,7 +29,7 @@ function Banner() {
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="https://www.uplevo.com/img/designbox/thiet-ke-banner.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
             alt="..."
           />
         </div>
@@ -37,24 +37,24 @@ function Banner() {
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX26402160.jpg"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
             alt="..."
           />
         </div>
         {/* Item 5 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="https://thumbs.dreamstime.com/b/medicine-banner-word-line-icon-vector-background-medicine-banner-word-line-icon-115516744.jpg"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+            src="https://www.uplevo.com/img/designbox/thiet-ke-banner.png"
+            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
             alt="..."
           />
         </div>
       </div>
       {/* Slider indicators */}
-      <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse">
+      <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse object-cover">
         <button
           type="button"
-          className="h-3 w-3 rounded-full red"
+          className="h-3 w-3 rounded-full"
           aria-current="true"
           aria-label="Slide 1"
           data-carousel-slide-to="0"
@@ -92,7 +92,7 @@ function Banner() {
       {/* Slider controls */}
       <button
         type="button"
-        className="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+        className="absolute start-0 md:top-72 top-52 z-30 flex cursor-pointer items-center justify-center px-4 focus:outline-none"
         data-carousel-prev
       >
         <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
@@ -116,7 +116,7 @@ function Banner() {
       </button>
       <button
         type="button"
-        className="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+        className="absolute end-0 md:top-72 top-52 z-30 flex cursor-pointer items-center justify-center px-4 focus:outline-none"
         data-carousel-next
       >
         <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">

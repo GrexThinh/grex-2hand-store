@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 import { useMemo } from "react";
@@ -7,21 +7,18 @@ import Testimoni from "./Testimoni";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = () => {
-    const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <div className="my-16 flex w-full flex-col" id="testimoni">
-    <ScrollAnimationWrapper className="">
-        <motion.h3
-          variants={scrollAnimation}
-          className="text-black-600 text-3xl font-medium leading-normal flex justify-center"
-        >
-          Best Seller Products
-        </motion.h3>
+      <ScrollAnimationWrapper className="">
+        <h4 className="text-black-600 flex justify-center text-3xl font-medium leading-normal">
+          Sản phẩm nổi bật
+        </h4>
       </ScrollAnimationWrapper>
       <ScrollAnimationWrapper className="flex w-full flex-col">
-        <motion.div variants={scrollAnimation}>
+        <div>
           <Testimoni />
-        </motion.div>
+        </div>
       </ScrollAnimationWrapper>
     </div>
   );

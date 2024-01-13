@@ -75,18 +75,11 @@ const Testimoni = ({}) => {
     slidesToScroll: 2,
     responsive: [
       {
-        breakpoint: 1250,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 790,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -149,19 +142,22 @@ const Testimoni = ({}) => {
         {listTestimoni.map((listTestimonis, index) => (
           <Link href={`/blog/blog-details`} passHref>
             <div className="flex px-3" key={index}>
-              <div className="flex flex-col rounded-lg border-2 border-gray-500 p-8 transition-all hover:border-orange-500">
-                <div className="flex flex-col space-y-5 sm:flex-row sm:space-x-5 md:flex-row md:space-x-5 xl:flex-row xl:space-x-5">
-                  <div className="flex justify-center">
-                    <img
-                      src={listTestimonis.image}
-                      alt="testimoni"
-                      className="h-40 w-36 sm:w-48 md:w-60 xl:w-60"
-                    />
-                  </div>
+              <div className="flex flex-col rounded-lg border-2 border-gray-500 p-3 transition-all hover:border-orange-500 sm:p-8">
+                <div className="sm:grid sm:grid-cols-2 sm:space-x-5 space-y-5 flex flex-col">
+                  <img
+                    src={listTestimonis.image}
+                    alt="testimoni"
+                    className="sm:h-60 h-40 w-72 sm:w-72 md:w-96"
+                  />
+
                   <div className="flex flex-col place-content-evenly space-y-5">
-                    <p className="flex justify-center text-xl font-semibold">{listTestimonis.name}</p>
-                    <p className="flex justify-center">{listTestimonis.testimoni}</p>
-                    <div className="flex items-center space-x-3 justify-end">
+                    <p className="flex justify-center text-base font-semibold md:text-base">
+                      {listTestimonis.name}
+                    </p>
+                    <p className="flex justify-center text-xs md:text-base">
+                      {listTestimonis.testimoni}
+                    </p>
+                    <div className="flex items-center justify-end space-x-3">
                       <p className="sm:text-sm md:text-xl xl:text-xl">
                         More details
                       </p>
