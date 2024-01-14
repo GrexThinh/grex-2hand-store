@@ -1,7 +1,7 @@
 export default function ContactIcon() {
   return (
     <div className="fixed bottom-20 right-8 z-[99] flex flex-col">
-      <div className="hover:shadow-signUp flex w-0  cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
+      <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
         <a href="callto:0912345678" className="scale-50 sm:scale-75">
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
@@ -23,7 +23,7 @@ export default function ContactIcon() {
           </svg>
         </a>
       </div>
-      <div className="hover:shadow-signUp flex w-0  cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
+      <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
         <a href="https://zalo.me/0912345678" className="scale-50 sm:scale-75">
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
@@ -61,7 +61,7 @@ export default function ContactIcon() {
           </svg>
         </a>
       </div>
-      <div className="hover:shadow-signUp flex w-0 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
+      <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
         <a href="" className="scale-50 sm:scale-75">
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
