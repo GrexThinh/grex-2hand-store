@@ -75,7 +75,7 @@ function ProductInfo({ title, description }) {
           <p>
             Số điện thoại:{" "}
             <span className="text-green-400">
-              <a href="callto:0912345678">0912345678</a>
+              <a href="tel:0912345678">0912345678</a>
             </span>
           </p>
           <p>

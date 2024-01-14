@@ -2,7 +2,7 @@ export default function ContactIcon() {
   return (
     <div className="fixed bottom-20 right-8 z-[99] flex flex-col">
       <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
-        <a href="callto:0912345678" className="scale-50 sm:scale-75">
+        <a href="tel:0912345678" className="scale-50 sm:scale-75">
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
             xmlns="http://www.w3.org/2000/svg"
