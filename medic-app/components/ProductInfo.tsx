@@ -39,6 +39,7 @@ function ProductInfo({ title, description }) {
       <button
         data-popover-target="popover-default"
         data-popover-placement="bottom"
+        data-popover-trigger="click"
         type="button"
         className="dark:focus:ring-[#3b5998]/55 mt-10 inline-flex items-center rounded-lg bg-green-500 p-4 text-center text-lg font-medium text-white hover:bg-green-500/90 focus:outline-none focus:ring-4 focus:ring-[#3b5998]/50"
       >
@@ -71,8 +72,18 @@ function ProductInfo({ title, description }) {
           </h3>
         </div>
         <div className="flex flex-col space-y-3 px-3 py-2">
-          <p>Số điện thoại: 0934732333</p>
-          <p>Zalo: 0934732333</p>
+          <p>
+            Số điện thoại:{" "}
+            <span className="text-green-400">
+              <a href="callto:0912345678">0912345678</a>
+            </span>
+          </p>
+          <p>
+            Zalo:{" "}
+            <span className="text-green-400">
+              <a href="https://zalo.me/0912345678">0912345678</a>
+            </span>
+          </p>
         </div>
         <div data-popper-arrow></div>
       </div>
