@@ -140,7 +140,7 @@ const Testimoni = ({}) => {
         className="flex justify-items-stretch"
       >
         {listTestimoni.map((listTestimonis, index) => (
-          <Link href={`/blog/blog-details`} passHref>
+          <Link href={`/products/product-detail`} passHref>
             <div className="flex px-3" key={index}>
               <div className="flex flex-col rounded-lg border-2 border-gray-500 p-3 transition-all hover:border-orange-500 sm:p-8">
                 <div className="flex flex-col space-y-5 sm:grid sm:grid-cols-2 sm:space-x-5">
@@ -151,10 +151,10 @@ const Testimoni = ({}) => {
                   />
 
                   <div className="flex flex-col place-content-evenly space-y-5">
-                    <p className="flex justify-center text-base font-semibold md:text-base">
+                    <p className="flex justify-center text-base font-semibold md:text-lg">
                       {listTestimonis.name}
                     </p>
-                    <p className="flex justify-center text-xs md:text-base">
+                    <p className="text-over flex justify-center text-base md:text-base">
                       {listTestimonis.testimoni}
                     </p>
                     <button

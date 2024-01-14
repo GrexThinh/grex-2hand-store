@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
   const imageNode = product.imageNode;
 
   return (
-    <Link href={`/blog/${handle}`} passHref>
+    <Link href={`/products/product-detail`} passHref>
       <div className="md:h-120 xl:h-120 border-palette-lighter mx-auto rounded border shadow-lg hover:shadow-green-500">
         <div className="border-palette-lighter relative h-48 border-b-2 md:h-96">
           <Image
@@ -24,16 +24,16 @@ const ProductCard = ({ product }) => {
           <div className="font-primary text-palette-primary px-4 pt-4 text-xs font-semibold sm:text-lg md:text-xl xl:text-xl">
             {title}
           </div>
-          <div className="font-primary p-4 text-xs text-gray-600 sm:text-xs md:text-base">
+          <div className="h-12 sm:h-12 md:h-16 text-over font-primary p-4 text-xs text-gray-600 sm:text-xs md:text-base">
             {description}
           </div>
           <div
-            className="text-palette-dark bg-palette-lighter absolute bottom-0 right-0 mb-2 rounded-tl-sm pb-1 pr-4 pt-2 
+            className="text-palette-dark bg-palette-lighter absolute bottom-0 right-0 mb-2 rounded-tl-sm pb-1 pr-1 sm:pr-4 sm:pt-2 
             xl:text-base xl:font-medium"
           >
             <button
               type="button"
-              className="animate-pulse rounded-lg bg-gradient-to-r from-green-500 to-yellow-200 px-3 py-2 text-center text-sm font-medium text-black hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700"
+              className="animate-pulse rounded-lg bg-gradient-to-r from-green-500 to-yellow-200 px-3 py-2 text-center text-xs sm:text-sm font-medium text-black hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700"
             >
               Bấm xem
             </button>
