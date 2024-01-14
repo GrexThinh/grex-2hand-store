@@ -17,19 +17,19 @@ const ProductsPage = () => {
               Loại sản phẩm
             </h4>
             <ul>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Loại A</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Loại B</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Loại C</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Loại D</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Loại E</a>
               </li>
             </ul>
@@ -40,16 +40,16 @@ const ProductsPage = () => {
               Khác
             </h4>
             <ul>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Mới</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Hàng sẵn có</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Giảm giá</a>
               </li>
-              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-primary sm:text-xs lg:text-xl">
+              <li className="mb-2 pb-1 pl-5 transition-all duration-300 last:mb-0 hover:text-green-500 sm:text-xs lg:text-xl">
                 <a href="#">Sắp ra mắt</a>
               </li>
             </ul>

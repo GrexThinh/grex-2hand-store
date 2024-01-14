@@ -56,7 +56,7 @@ const Signin = () => {
               <div className="flex items-center gap-8">
                 <button
                   aria-label="sign with google"
-                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-green-500 dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-green-500 dark:hover:shadow-none"
                 >
                   <span className="mr-3">
                     <svg
@@ -96,7 +96,7 @@ const Signin = () => {
 
                 <button
                   aria-label="signup with github"
-                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+                  className="text-body-color dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-green-500 dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-green-500 dark:hover:shadow-none"
                 >
                   <span className="mr-3">
                     <svg
@@ -152,7 +152,7 @@ const Signin = () => {
                       type="checkbox"
                       className="peer sr-only"
                     />
-                    <span className="border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700 group mt-1 flex h-5 min-w-[20px] items-center justify-center rounded peer-checked:bg-primary">
+                    <span className="group mt-1 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700">
                       <svg
                         className="opacity-0 peer-checked:group-[]:opacity-100"
                         width="10"
@@ -177,7 +177,7 @@ const Signin = () => {
                     </label>
                   </div>
 
-                  <a href="#" className="hover:text-primary">
+                  <a href="#" className="hover:text-green-500">
                     Forgot Password?
                   </a>
                 </div>
@@ -207,7 +207,7 @@ const Signin = () => {
                 <p>
                   Don't have an account?{" "}
                   <Link
-                    className="text-black hover:text-primary dark:text-white hover:dark:text-primary"
+                    className="text-black hover:text-green-500 dark:text-white hover:dark:text-green-500"
                     href="/auth/signup"
                   >
                     Sign Up

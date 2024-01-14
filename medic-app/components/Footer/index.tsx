@@ -70,7 +70,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="/"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Trang chủ
                       </a>
@@ -78,7 +78,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="/products"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Trang sản phẩm
                       </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="/contact"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Trang liên hệ
                       </a>
@@ -94,7 +94,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="/about"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Trang thông tin công ty
                       </a>
@@ -128,7 +128,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Số điện thoại: 0123456789
                       </a>
@@ -136,7 +136,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Zalo: 0123456789
                       </a>
@@ -144,7 +144,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Facebook: https://www.facebook.com/vmedic
                       </a>
@@ -152,7 +152,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="mb-3 inline-block hover:text-primary"
+                        className="mb-3 inline-block hover:text-green-500"
                       >
                         Email: vmedic@gmail.com
                       </a>

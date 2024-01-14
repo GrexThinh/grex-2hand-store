@@ -53,7 +53,7 @@ const Header = () => {
     >
       <div className="relative mx-auto items-center justify-between px-4 md:px-8 xl:grid xl:grid-cols-5">
         <div className="col-span-2 flex items-center justify-between gap-5 xl:w-1/4">
-          <a href="/" className="w-1/4 xl:w-4/5 inline-block" role="button">
+          <a href="/" className="inline-block w-1/4 xl:w-4/5" role="button">
             <img src="/images/logo/vmedic.svg" alt="logo" />
           </a>
 
@@ -154,7 +154,7 @@ const Header = () => {
         </div>
         <div
           id="navigation"
-          className={`invisible absolute right-0 col-span-2 h-0 items-center justify-end gap-10 xl:visible xl:flex xl:h-auto pr-5 ${
+          className={`invisible absolute right-0 col-span-2 h-0 items-center justify-end gap-10 pr-5 xl:visible xl:flex xl:h-auto ${
             navigationOpen &&
             "navbar !visible h-auto rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
           }`}
@@ -167,7 +167,7 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-green-500"
                       >
                         {menuItem.title}
                         <span>
@@ -185,7 +185,7 @@ const Header = () => {
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-primary">
+                          <li key={key} className="hover:text-green-500">
                             <a href={item.path || "#"}>{item.title}</a>
                           </li>
                         ))}
@@ -196,8 +196,8 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "text-primary hover:text-primary"
-                          : "hover:text-primary"
+                          ? "text-green-500 hover:text-green-500"
+                          : "hover:text-green-500"
                       }
                     >
                       {menuItem.title}
