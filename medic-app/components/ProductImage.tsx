@@ -22,11 +22,11 @@ function ProductImage({ images }) {
       </div>
       <div className="border-palette-lighter relative flex border-t">
         <div
-          className="flex cursor-pointer items-center hover:bg-green-300"
+          className="flex cursor-pointer items-center hover:bg-cyan-100"
           onClick={() => scroll(-300)}
         >
           <svg
-            className="h-6 w-6 text-green-800"
+            className="h-6 w-6 text-cyan-800"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -63,11 +63,11 @@ function ProductImage({ images }) {
         </div>
 
         <div
-          className="flex cursor-pointer items-center hover:bg-green-300"
+          className="flex cursor-pointer items-center hover:bg-cyan-100"
           onClick={() => scroll(300)}
         >
           <svg
-            className="h-6 w-6 text-green-800"
+            className="h-6 w-6 text-cyan-800"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

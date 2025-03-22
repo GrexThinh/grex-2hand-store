@@ -30,38 +30,38 @@ const Products = () => {
             type="search"
             id="default-search"
             className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-            placeholder="Tìm kiếm sản phẩm"
+            placeholder="Search products..."
             required
           />
         </div>
 
         <FormControl className="">
-          <InputLabel className="text-zinc-500">Sắp xếp theo</InputLabel>
+          <InputLabel className="text-zinc-500">Sort by</InputLabel>
           <Select
             className="w-full text-zinc-500"
             value={10}
-            label="Sắp xếp theo"
+            label="Sort by"
             onChange={() => {}}
           >
             <MenuItem value={10} className="text-zinc-500">
-              Tên
+              Name
             </MenuItem>
             <MenuItem value={20} className="text-zinc-500">
-              Mới nhất
+              Date
             </MenuItem>
           </Select>
         </FormControl>
 
         <FormControl className="">
-          <InputLabel className="text-zinc-500">Hiển số lượng</InputLabel>
+          <InputLabel className="text-zinc-500">Display quanity</InputLabel>
           <Select
             className="w-full text-zinc-500"
             value={10}
-            label="Hiển số lượng"
+            label="Display quantity"
             onChange={() => {}}
           >
             <MenuItem value={30} className="text-zinc-500">
-              Tất cả
+              All
             </MenuItem>
             <MenuItem value={10} className="text-zinc-500">
               10

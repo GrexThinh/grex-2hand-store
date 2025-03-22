@@ -1,144 +1,61 @@
+"use client";
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 function Banner() {
   return (
-    <div
-      id="default-carousel"
-      className="relative w-full pt-30"
-      data-carousel="slide"
-    >
-      {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {/* Item 1 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://incucre.com/wp-content/uploads/2017/03/thiet-ke-banner-2-1-1024x351.jpg"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-            alt="..."
-          />
-        </div>
-        {/* Item 2 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://incucre.com/wp-content/uploads/2017/03/thiet-ke-banner-2-1-1024x351.jpg"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
-            alt="..."
-          />
-        </div>
-        {/* Item 3 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://www.uplevo.com/img/designbox/thiet-ke-banner.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
-            alt="..."
-          />
-        </div>
-        {/* Item 4 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX26402160.jpg"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
-            alt="..."
-          />
-        </div>
-        {/* Item 5 */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://www.uplevo.com/img/designbox/thiet-ke-banner.png"
-            className="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2 object-cover"
-            alt="..."
-          />
-        </div>
-      </div>
-      {/* Slider indicators */}
-      <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse object-cover">
-        <button
-          type="button"
-          className="h-3 w-3 rounded-full"
-          aria-current="true"
-          aria-label="Slide 1"
-          data-carousel-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          className="h-3 w-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 2"
-          data-carousel-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          className="h-3 w-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 3"
-          data-carousel-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          className="h-3 w-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 4"
-          data-carousel-slide-to="3"
-        ></button>
-        <button
-          type="button"
-          className="h-3 w-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 5"
-          data-carousel-slide-to="4"
-        ></button>
-
-      </div>
-      {/* Slider controls */}
-      <button
-        type="button"
-        className="absolute start-0 md:top-72 top-52 z-30 flex cursor-pointer items-center justify-center px-4 focus:outline-none"
-        data-carousel-prev
-      >
-        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-          <svg
-            className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 1 1 5l4 4"
-            />
-          </svg>
-          <span className="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        className="absolute end-0 md:top-72 top-52 z-30 flex cursor-pointer items-center justify-center px-4 focus:outline-none"
-        data-carousel-next
-      >
-        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
-          <svg
-            className="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span className="sr-only">Next</span>
-        </span>
-      </button>
-    </div>
+    <Carousel>
+      <Carousel.Item>
+        <div
+          className="d-block w-100"
+          style={{
+            objectFit: "cover",
+            background:
+              "url(https://img.freepik.com/premium-vector/special-offer-final-sale-banner-red-background-illustration_275806-121.jpg?w=1380) repeat center",
+            backgroundSize: "cover",
+            height: "400px",
+          }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Cheap products</h3>
+          {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          className="d-block w-100"
+          style={{
+            objectFit: "cover",
+            background:
+              "url(https://static.vecteezy.com/system/resources/previews/017/128/530/non_2x/3d-sale-template-promo-banner-with-50-off-discount-special-offer-and-percentage-sign-vector.jpg) repeat center",
+            backgroundSize: "cover",
+            height: "400px",
+          }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Product quality is over 90%</h3>
+          {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          className="d-block w-100"
+          style={{
+            objectFit: "cover",
+            background:
+              "url(https://static.vecteezy.com/system/resources/previews/003/208/782/non_2x/sale-banner-with-place-for-your-text-illustration-free-vector.jpg) repeat center",
+            backgroundSize: "cover",
+            height: "400px",
+          }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Sản phảm còn nguyên mới</h3>
+          {/* <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 export default Banner;

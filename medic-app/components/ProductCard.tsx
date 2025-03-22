@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <Link href={`/products/product-detail`} passHref>
-      <div className="md:h-120 xl:h-120 border-palette-lighter mx-auto rounded border shadow-lg hover:shadow-green-500">
+      <div className="md:h-120 xl:h-120 border-palette-lighter mx-auto rounded border shadow-lg hover:shadow-blue-500">
         <div className="border-palette-lighter relative h-48 border-b-2 md:h-96">
           <Image
             src={imageNode}
@@ -18,13 +18,13 @@ const ProductCard = ({ product }) => {
             layout="fill"
             className="transform duration-500 ease-in-out hover:scale-110"
           />
-          <Label title={"Sale"}/>
+          <Label title={"Sale"} />
         </div>
-        <div className="relative lg:h-44 h-40">
+        <div className="relative h-40 lg:h-44">
           <div className="font-primary text-palette-primary px-4 pt-4 text-xs font-semibold sm:text-lg md:text-xl xl:text-xl">
             {title}
           </div>
-          <div className="h-12 sm:h-12 md:h-16 text-over font-primary p-4 text-xs text-gray-600 sm:text-xs md:text-base">
+          <div className="text-over font-primary h-12 p-4 text-xs text-gray-600 sm:h-12 sm:text-xs md:h-16 md:text-base">
             {description}
           </div>
           <div
@@ -33,9 +33,9 @@ const ProductCard = ({ product }) => {
           >
             <button
               type="button"
-              className="animate-pulse rounded-lg bg-gradient-to-r from-green-500 to-yellow-200 px-3 py-2 text-center text-xs sm:text-sm font-medium text-black hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700"
+              className="rounded-lg bg-cyan-500 px-3 py-2 text-center text-xs font-medium text-black hover:bg-sky-500 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700 sm:text-sm"
             >
-              Bấm xem
+              View Detail
             </button>
           </div>
         </div>

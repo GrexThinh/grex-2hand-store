@@ -1,11 +1,11 @@
 export default function Head() {
   return (
     <>
-      <title>V-Medic</title>
+      <title>Grex 2hand Store - Đồ cũ giá rẻ</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Built with Next.js and TypeScript" />
       <link rel="icon" href="/images/favicon.ico" />
-      
+      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
     </>
   );
 }

@@ -4,7 +4,7 @@ import ProductSection from "@/components/ProductSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "V-Medic - Sản phẩm chi tiết",
+  title: "2hand store - Product Detail",
   description: "",
 };
 

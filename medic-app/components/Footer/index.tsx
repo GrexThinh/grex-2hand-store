@@ -32,14 +32,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/vmedic.svg"
+                    src="/images/logo/brand.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                 </a>
-
-                <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="mb-10 mt-5 text-center">A product of Grex</p>
+                <p className="mb-10">
+                  Give you the best experience with our solutions
                 </p>
               </motion.div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Các trang chính
+                    Main pages
                   </h4>
 
                   <ul>
@@ -72,7 +72,7 @@ const Footer = () => {
                         href="/"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Trang chủ
+                        Home
                       </a>
                     </li>
                     <li>
@@ -80,7 +80,7 @@ const Footer = () => {
                         href="/products"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Trang sản phẩm
+                        Products
                       </a>
                     </li>
                     <li>
@@ -88,7 +88,7 @@ const Footer = () => {
                         href="/contact"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Trang liên hệ
+                        Contact
                       </a>
                     </li>
                     <li>
@@ -96,7 +96,7 @@ const Footer = () => {
                         href="/about"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Trang thông tin công ty
+                        Information
                       </a>
                     </li>
                   </ul>
@@ -121,7 +121,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Thông tin liên hệ
+                    Contact Info
                   </h4>
 
                   <ul>
@@ -130,7 +130,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Số điện thoại: 0123456789
+                        Phone number: 0587030273
                       </a>
                     </li>
                     <li>
@@ -138,7 +138,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Zalo: 0123456789
+                        Zalo: 0587030273
                       </a>
                     </li>
                     <li>
@@ -146,7 +146,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Facebook: https://www.facebook.com/vmedic
+                        Facebook: https://www.facebook.com/thinhgrex
                       </a>
                     </li>
                     <li>
@@ -154,7 +154,7 @@ const Footer = () => {
                         href="#"
                         className="mb-3 inline-block hover:text-green-500"
                       >
-                        Email: vmedic@gmail.com
+                        Email: vanthinhnq@gmail.com
                       </a>
                     </li>
                   </ul>

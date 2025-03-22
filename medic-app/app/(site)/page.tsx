@@ -4,7 +4,7 @@ import Banner from "@/components/Banner";
 import Features from "@/components/features";
 
 export const metadata: Metadata = {
-  title: "V-Medic - Trang chủ",
+  title: "Grex 2hand Store - Trang chủ",
   description: "",
 };
 

@@ -5,14 +5,14 @@ import ProductCard from "../ProductCard";
 
 const Blog = async () => {
   return (
-    <section className="py-20">
+    <section className="py-12">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
         {/* <!-- Section Title Start --> */}
         <div className="animate_top mx-auto text-center">
           <SectionHeader
             headerInfo={{
-              subtitle: `Tất cả sản phẩm của chúng tôi`,
-              description: `Chúng tôi luôn mang đến những sản phẩm tốt nhất cho khách hàng.`,
+              subtitle: `All our products`,
+              description: `We always bring the best products to customers.`,
             }}
           />
         </div>

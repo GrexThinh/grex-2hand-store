@@ -1,15 +1,15 @@
 export default function ContactIcon() {
   return (
-    <div className="fixed bottom-20 right-8 z-[99] flex flex-col">
-      <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
+    <div className="fixed bottom-20 right-15 z-[99] flex flex-col">
+      {/* <div className="hover:shadow-signUp flex w-0 h-14 sm:h-20 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
         <a href="tel:0912345678" className="scale-50 sm:scale-75">
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="100"
-            height="100"
+            width="80"
+            height="80"
             viewBox="0 0 48 48"
           >
             <path
@@ -22,16 +22,20 @@ export default function ContactIcon() {
             ></path>
           </svg>
         </a>
-      </div>
-      <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
-        <a href="https://zalo.me/0912345678" className="scale-50 sm:scale-75">
+      </div> */}
+      <div className="hover:shadow-signUp flex h-14 w-0 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 sm:h-20">
+        <a
+          href="https://zalo.me/0587030273"
+          target="_blank"
+          className="scale-50 sm:scale-75"
+        >
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="100"
-            height="100"
+            width="80"
+            height="80"
             viewBox="0 0 48 48"
           >
             <path
@@ -61,15 +65,19 @@ export default function ContactIcon() {
           </svg>
         </a>
       </div>
-      <div className="hover:shadow-signUp flex w-0 h-14 sm:h-22 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80">
-        <a href="" className="scale-50 sm:scale-75">
+      <div className="hover:shadow-signUp flex h-14 w-0 cursor-pointer items-center justify-center rounded-sm shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 sm:h-20">
+        <a
+          href="https://www.facebook.com/thinhgrex/"
+          className="scale-50 sm:scale-75"
+          target="_blank"
+        >
           <svg
             className="animate-bounce motion-reduce:animate-bounce"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="100"
-            height="100"
+            width="80"
+            height="80"
             viewBox="0 0 48 48"
           >
             <path

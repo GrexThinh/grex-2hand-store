@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
@@ -45,16 +44,16 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full py-7 ${
+      className={`fixed left-0 top-0 z-99999 w-full py-3 ${
         stickyMenu
-          ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
+          ? "bg-white shadow transition duration-100 dark:bg-black"
           : ""
       }`}
     >
       <div className="relative mx-auto items-center justify-between px-4 md:px-8 xl:grid xl:grid-cols-5">
         <div className="col-span-2 flex items-center justify-between gap-5 xl:w-1/4">
-          <a href="/" className="inline-block w-1/4 xl:w-4/5" role="button">
-            <img src="/images/logo/vmedic.svg" alt="logo" />
+          <a href="/" className="inline-block w-1/4 xl:w-full" role="button">
+            <img src="/images/logo/brand.png" alt="logo" />
           </a>
 
           <div className="relative w-1/2 xl:hidden 2xl:hidden">
@@ -79,7 +78,7 @@ const Header = () => {
               type="search"
               id="default-search"
               className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-green-500 focus:ring-green-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-green-500 dark:focus:ring-green-500"
-              placeholder="Tìm kiếm"
+              placeholder="Search"
               required
             />
           </div>
@@ -147,7 +146,7 @@ const Header = () => {
               type="search"
               id="default-search"
               className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-green-500 focus:ring-green-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-green-500 dark:focus:ring-green-500"
-              placeholder="Tìm kiếm"
+              placeholder="Search"
               required
             />
           </div>
@@ -196,8 +195,8 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "text-green-500 hover:text-green-500"
-                          : "hover:text-green-500"
+                          ? "font-bold text-blue-500 hover:text-blue-500"
+                          : "hover:text-blue-500"
                       }
                     >
                       {menuItem.title}

@@ -9,7 +9,7 @@ function ProductDesc() {
 
   return (
     <div>
-      <div className="sm:border-b border-gray-200 text-center text-sm text-xs text-xs font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400 md:text-lg md:text-lg">
+      <div className="border-gray-200 text-center text-sm text-xs text-xs font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400 sm:border-b md:text-lg md:text-lg">
         <ul className="-mb-px flex flex-wrap text-xs md:text-lg">
           <li className="me-2 cursor-pointer">
             <a
@@ -17,10 +17,10 @@ function ProductDesc() {
                 activeTab === 0
                   ? "border-green-600 text-green-600 dark:border-green-500 dark:text-green-500"
                   : "border-transparent"
-              } sm:p-4 p-2`}
+              } p-2 sm:p-4`}
               onClick={() => handleTabClick(0)}
             >
-              Mô tả
+              Description
             </a>
           </li>
           <li className="me-2 cursor-pointer">
@@ -29,10 +29,10 @@ function ProductDesc() {
                 activeTab === 1
                   ? "border-green-600 text-green-600 dark:border-green-500 dark:text-green-500"
                   : "border-transparent"
-              } sm:p-4 p-2`}
+              } p-2 sm:p-4`}
               onClick={() => handleTabClick(1)}
             >
-              Thông tin bổ sung
+              Additional info
             </a>
           </li>
           <li className="me-2 cursor-pointer">
@@ -41,10 +41,10 @@ function ProductDesc() {
                 activeTab === 2
                   ? "border-green-600 text-green-600 dark:border-green-500 dark:text-green-500"
                   : "border-transparent"
-              } sm:p-4 p-2`}
+              } p-2 sm:p-4`}
               onClick={() => handleTabClick(2)}
             >
-              Khác
+              Other
             </a>
           </li>
         </ul>
@@ -84,7 +84,7 @@ function ProductDesc() {
                   <td className="px-6 py-3 text-gray-900 dark:text-white">
                     Hãng sản xuất
                   </td>
-                  <td className="px-6 py-3">V-Medic</td>
+                  <td className="px-6 py-3">Grex 2hand Store</td>
                 </tr>
                 <tr className="border-b">
                   <td className="px-6 py-3 text-gray-900 dark:text-white">

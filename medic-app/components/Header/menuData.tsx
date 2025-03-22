@@ -3,25 +3,25 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Trang chủ",
+    title: "Home",
     newTab: false,
     path: "/",
   },
   {
     id: 2.1,
-    title: "Sản phẩm",
+    title: "Products",
     newTab: false,
     path: "/products",
   },
   {
     id: 4,
-    title: "Liên hệ",
+    title: "Contact",
     newTab: false,
     path: "/contact",
   },
   {
     id: 2,
-    title: "Về V-Medic",
+    title: "About us",
     newTab: false,
     path: "/about",
   },

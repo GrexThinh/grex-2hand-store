@@ -6,8 +6,8 @@ const FunFact = () => {
   return (
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
-      <section className="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
-        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[lime] to-[orange] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+      <section className="px-4 md:px-8 2xl:px-0">
+        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-stone-100 py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
           <motion.div
             variants={{
               hidden: {
@@ -27,12 +27,10 @@ const FunFact = () => {
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              V-Medic Pharma Company
+              Grex 2hand Store
             </h2>
             <p className="mx-auto lg:w-11/12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              A place where you can find the best products at the best prices.
             </p>
           </motion.div>
 
@@ -58,7 +56,7 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 50+
               </h3>
-              <p className="text-lg lg:text-para2">Khách hàng</p>
+              <p className="text-lg lg:text-para2">Customers</p>
             </motion.div>
             <motion.div
               variants={{
@@ -81,7 +79,7 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 10+
               </h3>
-              <p className="text-lg lg:text-para2">Sản phẩm</p>
+              <p className="text-lg lg:text-para2">Products</p>
             </motion.div>
             <motion.div
               variants={{
@@ -104,7 +102,7 @@ const FunFact = () => {
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 3
               </h3>
-              <p className="text-lg lg:text-para2">Chứng nhận</p>
+              <p className="text-lg lg:text-para2">Certifications</p>
             </motion.div>
           </div>
         </div>

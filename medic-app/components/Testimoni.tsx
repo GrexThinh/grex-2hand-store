@@ -92,7 +92,7 @@ const Testimoni = ({}) => {
       <div className="flex w-full items-center justify-end px-2 pb-5">
         <div className="flex w-auto flex-none justify-between">
           <div
-            className="hover:text-white-500 mx-4 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border border-orange-500 bg-white text-orange-500 transition-all hover:bg-orange-500"
+            className="hover:text-white-500 mx-4 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border border-blue-500 bg-white text-cyan-500 transition-all hover:bg-cyan-500"
             onClick={sliderRef?.slickPrev}
           >
             <svg
@@ -112,7 +112,7 @@ const Testimoni = ({}) => {
             </svg>
           </div>
           <div
-            className="hover:text-white-500 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border border-orange-500 bg-white text-orange-500 transition-all hover:bg-orange-500"
+            className="hover:text-white-500 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border border-blue-500 bg-white text-cyan-500 transition-all hover:bg-cyan-500"
             onClick={sliderRef?.slickNext}
           >
             <svg
@@ -142,7 +142,7 @@ const Testimoni = ({}) => {
         {listTestimoni.map((listTestimonis, index) => (
           <Link href={`/products/product-detail`} passHref>
             <div className="flex px-3" key={index}>
-              <div className="flex flex-col rounded-lg border-2 border-gray-500 p-3 transition-all hover:border-orange-500 sm:p-8">
+              <div className="flex flex-col rounded-lg border-2 border-gray-500 p-3 transition-all hover:border-cyan-500 sm:p-8">
                 <div className="flex flex-col space-y-5 sm:grid sm:grid-cols-2 sm:space-x-5">
                   <img
                     src={listTestimonis.image}
@@ -159,9 +159,9 @@ const Testimoni = ({}) => {
                     </p>
                     <button
                       type="button"
-                      className="animate-bounce rounded-lg bg-gradient-to-r from-green-500 to-yellow-200 px-3 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700"
+                      className="rounded-lg bg-gradient-to-r from-cyan-500 to-blue-200 px-3 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gradient-to-l hover:from-cyan-500 hover:to-blue-600 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700"
                     >
-                      Bấm xem chi tiết
+                      View detail
                     </button>
                   </div>
                 </div>

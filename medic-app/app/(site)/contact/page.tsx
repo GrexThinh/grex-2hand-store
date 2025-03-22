@@ -2,7 +2,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "V-Medic - Liên hệ",
+  title: "Grex 2hand Store - Contact",
   description: "",
 };
 
