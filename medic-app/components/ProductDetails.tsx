@@ -1,18 +1,22 @@
 "use client";
 
-import BackToProductButton from '@/components/BackToProductButton'
-import ProductInfo from '@/components/ProductInfo'
+import Link from "next/link";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ProductInfo from "@/components/ProductInfo";
 
-function ProductDetails({ productData }) {
+function ProductDetails({ product }) {
   return (
     <div className="flex flex-col space-y-5">
-      <BackToProductButton />
-      <ProductInfo 
-        title={productData.title}
-        description={productData.description}
-      />
+      <Link href="/products" passHref>
+        <div className="pb-2 hover:underline">
+          <div className="text-xs sm:text-lg">
+            <ArrowBackIosIcon className="pb-1" /> Back to all products
+          </div>
+        </div>
+      </Link>
+      <ProductInfo product={product} />
     </div>
-  )
+  );
 }
 
-export default ProductDetails
+export default ProductDetails;

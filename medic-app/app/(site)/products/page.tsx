@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Grex 2hand Store - Product",
-  description: "",
+  description: "This is product page",
 };
 
 const ProductsPage = () => {
@@ -29,6 +29,9 @@ const ProductsPage = () => {
               <li className="mb-2 pb-2 pl-5 text-slate-700 transition-all duration-300 last:mb-0 hover:text-cyan-600 sm:text-xs lg:text-lg">
                 <a href="#">🖱️ Mouse</a>
               </li>
+              <li className="mb-2 pb-2 pl-5 text-slate-700 transition-all duration-300 last:mb-0 hover:text-cyan-600 sm:text-xs lg:text-lg">
+                <a href="#">📚 Books</a>
+              </li>
             </ul>
           </div>
           <Divider />
@@ -38,16 +41,24 @@ const ProductsPage = () => {
             </h4>
             <ul>
               <li className="mb-2 pb-2 pl-5 text-slate-700 transition-all duration-300 last:mb-0 hover:text-cyan-600 sm:text-xs lg:text-lg">
-                <a href="#" className="flex gap-3"><div className="animate-ping">👉</div> New</a>
+                <a href="#" className="flex gap-3">
+                  <div className="animate-ping">👉</div> New
+                </a>
               </li>
               <li className="mb-2 pb-2 pl-5 text-slate-700 transition-all duration-300 last:mb-0 hover:text-cyan-600 sm:text-xs lg:text-lg">
-                <a href="#" className="flex gap-3"><div className="animate-ping">👉</div> In Stock</a>
+                <a href="#" className="flex gap-3">
+                  <div className="animate-ping">👉</div> In Stock
+                </a>
               </li>
               <li className="mb-2 pb-2 pl-5 text-slate-700 transition-all duration-300 last:mb-0 hover:text-cyan-600 sm:text-xs lg:text-lg">
-                <a href="#" className="flex gap-3"><div className="animate-ping">👉</div> On Sale</a>
+                <a href="#" className="flex gap-3">
+                  <div className="animate-ping">👉</div> On Sale
+                </a>
               </li>
               <li className="mb-2 pb-2 pl-5 text-slate-700 transition-all duration-300 last:mb-0 hover:text-cyan-600 sm:text-xs lg:text-lg">
-                <a href="#" className="flex gap-3"><div className="animate-ping">👉</div> Coming soon</a>
+                <a href="#" className="flex gap-3">
+                  <div className="animate-ping">👉</div> Coming soon
+                </a>
               </li>
             </ul>
           </div>

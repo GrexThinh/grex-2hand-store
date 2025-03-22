@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import BlogData from "../Blog/blogData";
+import { ProductData } from "../../data/product";
 import ProductCard from "../ProductCard";
 
 const Products = () => {
@@ -77,7 +77,7 @@ const Products = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-x-5 gap-y-5 lg:grid-cols-3">
-        {BlogData.map((blog, key) => (
+        {ProductData.map((blog, key) => (
           <ProductCard product={blog} key={key} />
         ))}
       </div>

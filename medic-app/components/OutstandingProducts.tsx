@@ -2,63 +2,10 @@
 
 import React, { useState } from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import Link from "next/link";
+import { ProductData } from "../data/product";
 
-const listTestimoni = [
-  {
-    name: "iezh Robert",
-    image:
-      "https://www.netmeds.com/images/product-v1/600x600/966767/patanjali_nutrela_natural_spirulina_tablet_60s_2_0.jpg",
-    city: "Warsaw",
-    country: "Poland",
-    rating: "4.5",
-    testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far the...",
-  },
-  {
-    name: "iezh Robert",
-    image:
-      "https://www.netmeds.com/images/product-v1/600x600/966767/patanjali_nutrela_natural_spirulina_tablet_60s_2_0.jpg",
-    city: "Warsaw",
-    country: "Poland",
-    rating: "4.5",
-    testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far the...",
-  },
-  {
-    name: "iezh Robert",
-    image:
-      "https://www.netmeds.com/images/product-v1/600x600/966767/patanjali_nutrela_natural_spirulina_tablet_60s_2_0.jpg",
-    city: "Warsaw",
-    country: "Poland",
-    rating: "4.5",
-    testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far the...",
-  },
-  {
-    name: "iezh Robert",
-    image:
-      "https://www.netmeds.com/images/product-v1/600x600/966767/patanjali_nutrela_natural_spirulina_tablet_60s_2_0.jpg",
-    city: "Warsaw",
-    country: "Poland",
-    rating: "4.5",
-    testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far the...",
-  },
-  {
-    name: "iezh Robert",
-    image:
-      "https://www.netmeds.com/images/product-v1/600x600/966767/patanjali_nutrela_natural_spirulina_tablet_60s_2_0.jpg",
-    city: "Warsaw",
-    country: "Poland",
-    rating: "4.5",
-    testimoni:
-      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far the...",
-  },
-];
-
-const Testimoni = ({}) => {
+const OutstandingProducts = ({}) => {
   const settings = {
     dots: true,
     customPaging: function (i) {
@@ -116,7 +63,7 @@ const Testimoni = ({}) => {
             onClick={sliderRef?.slickNext}
           >
             <svg
-              className="dark:text-green h-6 w-6 text-green-800"
+              className="dark:text-green h-6 w-6 text-gray-800"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -139,23 +86,27 @@ const Testimoni = ({}) => {
         ref={setSliderRef}
         className="flex justify-items-stretch"
       >
-        {listTestimoni.map((listTestimonis, index) => (
-          <Link href={`/products/product-detail`} passHref>
+        {ProductData.filter((item) => item.isOutstanding).map((prod, index) => (
+          <Link
+            href={`/products/${prod.id}`}
+            passHref
+            key={index}
+          >
             <div className="flex px-3" key={index}>
-              <div className="flex flex-col rounded-lg border-2 border-gray-500 p-3 transition-all hover:border-cyan-500 sm:p-8">
+              <div className="flex flex-col rounded-lg border-2 border-slate-500 p-3 transition-all hover:border-cyan-500 sm:p-4">
                 <div className="flex flex-col space-y-5 sm:grid sm:grid-cols-2 sm:space-x-5">
                   <img
-                    src={listTestimonis.image}
-                    alt="testimoni"
+                    src={prod.mainImage}
+                    alt="product-image"
                     className="h-40 w-72 sm:h-60 sm:w-72 md:w-96"
                   />
 
                   <div className="flex flex-col place-content-evenly space-y-5">
-                    <p className="flex justify-center text-base font-semibold md:text-lg">
-                      {listTestimonis.name}
+                    <p className="flex justify-center text-base font-bold text-slate-900 md:text-xl">
+                      {prod.title}
                     </p>
                     <p className="text-over flex justify-center text-base md:text-base">
-                      {listTestimonis.testimoni}
+                      {prod.desc}
                     </p>
                     <button
                       type="button"
@@ -174,4 +125,4 @@ const Testimoni = ({}) => {
   );
 };
 
-export default Testimoni;
+export default OutstandingProducts;

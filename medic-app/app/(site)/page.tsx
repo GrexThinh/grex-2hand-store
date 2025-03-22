@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Blog from "@/components/Blog";
+import Blog from "@/components/Product";
 import Banner from "@/components/Banner";
 import Features from "@/components/features";
 

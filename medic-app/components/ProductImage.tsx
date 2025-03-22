@@ -3,8 +3,8 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 
-function ProductImage({ images }) {
-  const [mainImg, setMainImg] = useState(images[0].node);
+function ProductImage({product}) {
+  const [mainImg, setMainImg] = useState(product.mainImage);
   const ref = useRef<any>(null);
 
   function scroll(scrollOffset) {
@@ -46,18 +46,13 @@ function ProductImage({ images }) {
           className="border-palette-lighter flex w-full space-x-1 overflow-auto border-t"
           ref={ref}
         >
-          {images.map((imgItem, index) => (
+          {product.images.map((imgItem, index) => (
             <button
               key={index}
               className="relative h-32 w-40 flex-shrink-0 rounded-sm "
-              onClick={() => setMainImg(imgItem.node)}
+              onClick={() => setMainImg(imgItem)}
             >
-              <Image
-                src={imgItem.node}
-                alt={imgItem.node}
-                layout="fill"
-                className=""
-              />
+              <Image src={imgItem} alt={imgItem} layout="fill" className="" />
             </button>
           ))}
         </div>

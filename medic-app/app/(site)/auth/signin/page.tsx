@@ -2,7 +2,7 @@ import Signin from "@/components/Auth/Signin";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Login Page - Solid SaaS Boilerplate",
+  title: "Grex 2hand Store - Login",
   description: "This is Login page for Startup Pro",
   // other metadata
 };

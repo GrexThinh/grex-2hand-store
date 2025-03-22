@@ -1,37 +1,21 @@
 import { Chip, Divider } from "@mui/material";
 
-function ProductInfo({ title, description }) {
+function ProductInfo({ product }) {
   return (
     <div className=" font-primary">
       <div className="text-palette-primary flex gap-5 px-1 pt-4 text-xl font-medium text-red-600">
         <Chip label="On sale" color="error" />
         <Chip label="In stock" color="success" />
-        <Chip label="Keyboard" color="primary" />
+        <Chip label={product.type} color="primary" />
       </div>
-      <h1 className="text-palette-primary py-2 text-3xl font-extrabold leading-relaxed sm:py-4">
-        {title}
+      <h1 className="text-slate-900 py-2 text-3xl font-extrabold leading-relaxed sm:py-4">
+        {product.title}
       </h1>
       <Divider />
       <div className="flex flex-col space-y-5">
         <div>
-          <p className="py-5 text-lg">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-          </p>
+          <p className="py-5 text-lg">{product.desc}</p>
         </div>
-        {/* <div>
-          <p className="py-5 text-lg text-black">Phòng tránh:</p>
-          <p className="text-lg ">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-          </p>
-        </div> */}
       </div>
       <button
         data-popover-target="popover-default"

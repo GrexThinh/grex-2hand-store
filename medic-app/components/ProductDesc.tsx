@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ProductDesc() {
+function ProductDesc({ product }) {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {
@@ -51,20 +51,7 @@ function ProductDesc() {
       </div>
       {activeTab == 0 && (
         <div className="flex flex-col space-y-5 text-xs md:text-lg">
-          <p className="pt-5">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-          </p>
-          <p className="pt-5">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-          </p>
+          <p className="pt-5">{product.desc}</p>
         </div>
       )}
       {activeTab == 1 && (
@@ -74,29 +61,29 @@ function ProductDesc() {
               <tbody>
                 <tr className="border-b ">
                   <td className="px-6 py-3 text-gray-900 dark:text-white">
-                    Tên thuốc
+                    Product name
                   </td>
                   <td className="px-6 py-3 font-medium text-gray-900 dark:text-white">
-                    Lorem isak
+                    {product.title}
                   </td>
                 </tr>
                 <tr className="border-b">
                   <td className="px-6 py-3 text-gray-900 dark:text-white">
-                    Hãng sản xuất
+                    Manufacturer
                   </td>
-                  <td className="px-6 py-3">Grex 2hand Store</td>
+                  <td className="px-6 py-3">{product.manufacturer}</td>
                 </tr>
                 <tr className="border-b">
                   <td className="px-6 py-3 text-gray-900 dark:text-white">
-                    Nhập khẩu
+                    Usage time
                   </td>
-                  <td className="px-6 py-3">Úc</td>
+                  <td className="px-6 py-3">{product.usageTime}</td>
                 </tr>
                 <tr className="border-b">
                   <td className="px-6 py-3 text-gray-900 dark:text-white">
-                    Trọng lượng
+                    Quantity
                   </td>
-                  <td className="px-6 py-3">500g</td>
+                  <td className="px-6 py-3">{product.quantity}</td>
                 </tr>
               </tbody>
             </table>
