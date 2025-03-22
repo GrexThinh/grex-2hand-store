@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import AllProducts from "@/components/Product";
 import Banner from "@/components/Banner";
-import Features from "@/components/features";
+import Features from "@/components/Features";
 
 export const metadata: Metadata = {
   title: "Grex 2hand Store - Trang chủ",
