@@ -2,7 +2,7 @@ import FunFact from "@/components/FunFact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Grex 2hand Store - Về chúng tôi",
+  title: "Grex 2hand Store - About us",
   description: "",
 };
 
